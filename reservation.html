@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Delishy Reservation Form</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: linear-gradient(rgba(18, 18, 18, 0.819), transparent 80%), url("img46.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 40rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-xxl {
+            border: 2px solid rgb(249, 184, 64);
+            backdrop-filter: blur(20px);
+        }
+
+        
+        .btn-submit {
+            color: white; 
+            transition: color 0.3s;
+        }
+
+        .btn-submit:hover {
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+<div class="container-xxl my-5 text-warning fw-bold fs-5 ">
+    <div class="container">
+        <h1 class="text-center text-warning p-3 m-3 display-4 fw-bold "><i class="fa-solid fa-utensils"></i> Urban Delishy Reservation Form</h1>
+        <div class="row g-3">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required autofocus>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="mb-3">
+                    <label for="guests" class="form-label">Number of guests</label>
+                    <input type="number" class="form-control" id="guests" required>
+                </div>
+                <div class="mb-3">
+                    <label for="datetime" class="form-label">Date and Time</label>
+                    <input type="datetime-local" class="form-control" id="datetime" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reserve-table" class="form-label">Would you like to reserve a table?</label>
+                    <input type="text" class="form-control" id="reserve-table" placeholder="Yes or No" required>
+                </div>
+                <div class="mb-3">
+                    <label for="reserve-room" class="form-label">Would you like to reserve a private room?</label>
+                    <input type="text" class="form-control" id="reserve-room" placeholder="Yes or No" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="reservation-type" class="form-label">Reservation Type</label>
+                    <select class="form-control" id="reservation-type" required>
+                        <option>Choose...</option>
+                        <option>Birthday</option>
+                        <option>Wedding</option>
+                        <option>Dinner</option>
+                        <option>Engagement</option>
+                        <option>Corporate</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="special-request" class="form-label">Special Request</label>
+                    <textarea class="form-control" id="special-request" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" id="reservation_submit" class="btn btn-warning px-5 my-3 fw-bold fs-5">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    let submit = document.getElementById("reservation_submit");
+reservation_submit.addEventListener("click",function(){
+    alert("Submitted Successfully. Redirecting to home page.....");
+    window.location.href="index.html";
+});
+</script>
+<br>
+<script src="bootstrap.js"></script>
+</body>
+</html>
