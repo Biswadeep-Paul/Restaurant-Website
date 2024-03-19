@@ -1,0 +1,67 @@
+
+body{
+    background: linear-gradient( rgba(18, 18, 18, 0.819) 50%, transparent 80%),url("img3.jpg");
+    /*background: url("img3.jpg");*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 40rem;   
+    font-family: Arial, Helvetica, sans-serif;
+}
+.display-4,.btn,.navbar h1,.container p,.service-item h1{
+    font-weight: bolder;
+
+}
+.navbar-nav .nav-link:hover
+{
+    color: rgb(249, 184, 64)!important;
+}
+
+.heading_service{
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 6rem;
+}
+.heading_service1{
+    text-align: center;
+    font-weight: bolder;
+    padding: 4rem;
+}
+.carousel-inner h1 {
+    color: white;
+    backdrop-filter: blur(20px);
+}
+.carousel-inner p {
+    color: white;
+    backdrop-filter: blur(20px);
+}
+.carousel-item img{
+    border-radius: 2rem;
+    border: 1rem solid rgb(249, 184, 64);
+    background-color: white;
+    
+
+}
+.container-xxl{
+    border-radius: 2rem;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    
+}
+.btn-link:hover,.btn-social:hover{
+    color:  rgb(249, 184, 64) !important;
+}
+
+.border-bottom{
+    text-decoration: none;
+    
+}
+
+.section-title{
+    border: 5px solid rgb(249, 184, 64);
+    border-radius: 1rem;
+    
+}

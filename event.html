@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Delishy - Events</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        background: linear-gradient(rgba(18, 18, 18, 0.819), transparent 80%), url("img41.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+        color: #fff;
+    }
+
+    
+
+    .event-card {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .event-title {
+        color: #ffc107;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .event-date {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .event-description {
+        font-size: 16px;
+    }
+    .btn-hover-black:hover{
+        color: black;
+
+    }
+    .event-title {
+    position: relative;
+    cursor: pointer; /* Optional: Adds pointer cursor when hovering */
+}
+
+.event-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 0;
+    height: 5px;
+    background-color: rgb(249, 184, 64);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.event-title:hover::before {
+    width: 100%;
+}
+  /* Styling for the back to top button */
+  #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 1rem;
+      background-color: rgb(249, 184, 64);
+      color: #fff;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+
+    
+</style>
+
+<body>
+    <!-- navbar and hero -->
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning fs-1 m-2" href="index.html">
+                <h1><i class="fa-solid fa-utensils"></i> UrbanDelishy</h1>
+            </a>
+            <button class="navbar-toggler navbar-light text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-bold" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto py-0 pe-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light m-2" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light m-2" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light m-2" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-warning m-2" href="event.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light m-2" href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                <a href="reservation.html" class="btn btn-warning fs-5 py-2 px-4 m-3">Reservation</a>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+    <div class="container">
+        <h1 class="text-center p-5 display-4 fw-bold">Upcoming Events at Urban Delishy</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h2 class="event-title">Live Music Night</h2>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> Date: Saturday, March 26th, 2024</p>
+                    <p class="event-description">Join us for a delightful evening filled with live music performances.
+                        Sit back, relax, and enjoy the soulful tunes while savoring our delicious dishes.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h2 class="event-title">Wine Tasting Event</h2>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> Date: Friday, April 8th, 2024</p>
+                    <p class="event-description">Embark on a journey through exquisite wines from around the world. Our
+                        expert sommeliers will guide you through a tasting experience like no other.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h2 class="event-title">BBQ & Brews Festival</h2>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> Date: Friday, August 22th, 2024</p>
+                    <p class="event-description">
+                        Join us for a sizzling celebration of BBQ and craft brews! Indulge in mouthwatering barbecue
+                        specialties paired perfectly with a artisanal brews.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="event-card">
+                    <h2 class="event-title">Sushi & Sake Night</h2>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> Date: Friday, April 8th, 2024</p>
+                    <p class="event-description">Experience Japanese culinary excellence at our upcoming event! Indulge
+                        in premium sushi rolls and savor the finest sake pairings. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-warning">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4 text-center">Company
+                    </h4>
+                    <a href="index.html" class="btn btn-link">Home</a>
+                    <a href="about.html" class="btn btn-link">About Us</a>
+                    <a href="contactus.html" class="btn btn-link">Contact Us</a>
+                    <a href="reservation.html" class="btn btn-link">Reservation</a>
+                    <a href="menu.html" class="btn btn-link">Menus</a>
+                    
+                    <a href="privacy.html" class="btn btn-link">Privacy Policy</a>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4 text-center">Contact
+                    </h4>
+                    <p class="mb-2 text-light"><i class="fa-solid  fa-location-dot text-warning"></i> Block D,Dwapip
+                        Colony,Near Splendid Repairs,Mumbai-400001</p>
+                    <p class="mb-2 text-light"><i class="fa-solid fa-address-book text-warning"></i> +91 9238111987</p>
+                    <p class="mb-2 text-light"><i class="fa-solid fa-envelope text-warning"></i> restaurant@gmail.com
+                    </p>
+                    <div class="d-flex pt-2 ">
+                        <a href="https://twitter.com/i/flow/login" class="btn btn-outline-light btn-social mx-2"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.facebook.com/login/" class="btn btn-outline-light btn-social mx-2"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/" class="btn btn-outline-light btn-social mx-2"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/accounts/login/?hl=en" class="btn btn-outline-light btn-social mx-2"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="section-title ff-secondary text-start text-warning fw-normal mb-4 text-center">Opening
+                    </h4>
+                    <h5 class="text-light fw-normal">Monday-Saturday</h5>
+                    <p>09 AM - 09 PM</p>
+                    <h5 class="text-light fw-normal">Sunday</h5>
+                    <p>10 AM - 08 PM</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center mb-3 mb-md-0 col-lg-12">
+                        &copy; <a href="" class="border-bottom text-warning">Urban Delishy, All right Reserved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Back to Top Button -->
+<button id="back-to-top" class="text-dark" title="Back to Top">↑</button>
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("back-to-top").style.display = "block";
+    } else {
+      document.getElementById("back-to-top").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  document.getElementById("back-to-top").addEventListener("click", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  });
+</script>
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>
